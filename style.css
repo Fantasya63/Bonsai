@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: sans-serif;
+}
+
+.page-padding
+{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+nav a {
+    color: #4c4d5f;
+    float: left;
+    text-decoration: none;
+}
+
+.dropdown
+{
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown buttons */
+.dropdown .dropbtn {
+    color: #4c4d5f;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
