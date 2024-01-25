@@ -1,10 +1,15 @@
 * {
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
 }
 
 body
 {
     font-family: sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: medium;
 }
 
 .page-padding
@@ -13,20 +18,78 @@ body
     padding-right: 80px;
 }
 
+/* Navigation ------------------ */
+
+nav
+{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+/* All links and dropdowns in the navbar */
+nav .dropdown, nav a
+{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 nav a {
     color: #4c4d5f;
     float: left;
     text-decoration: none;
 }
 
+.product-nav-inside-content-wrapper
+{
+    width: 400px;
+    padding: 56px;
+}
+
+
+
+#logo
+{
+    height: 32px;
+    margin-right: 48px;
+}
+
+.main-nav-right
+{
+    margin-left: auto;
+}
+
+/* Sizings ------------------------------ */
+.fnt_24
+{
+    font-size: 24px;
+}
+
+.md_24
+{
+    height: 24px;
+}
+
+.md_40
+{
+    height: 40px;
+}
+
+/* User Inputs -----------------------------*/
+
+/* Dropdowns */
 .dropdown
 {
+    cursor: pointer;
     float: left;
     overflow: hidden;
+    padding: 40px 0px;
 }
 
 /* Dropdown buttons */
 .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: medium;
     color: #4c4d5f;
     border: none;
     outline: none;
@@ -37,10 +100,98 @@ nav a {
 {
     display: none;
     position: absolute;
+    box-shadow: 0px 0px 60px 0px rgba(2, 4, 69, 0.184);
+}
+
+.dropdown-content:last-child
+{
+    border-bottom: none;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content 
 {
     display: block;
+}
+
+/* Buttons */
+.button
+{
+    box-sizing: content-box;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: .6px;
+    text-transform: uppercase;
+
+    padding: 12px 24px;
+    background-color: #00b289;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 4px;
+    border: 2px solid #00b289;
+
+    cursor: pointer;
+}
+
+.button:hover
+{
+    background-color: #00a07b;
+    border: 2px solid #00a07b;
+}
+
+.outlined
+{
+    box-sizing: content-box;
+    background-color: white;
+    color: #00b289;
+    border: 2px solid #00b289;
+}
+
+.outlined:hover
+{
+    color: white;
+    background-color: #00b289;
+    border: 2px solid #00b289;
+}
+
+nav button
+{
+    margin-left: 16px;
+}
+
+.product-nav-inside-content-wrapper
+{
+    border-bottom: 1px solid #4c4d5f17;
+}
+
+.product-nav-inside-content-wrapper:last-child
+{
+    border-bottom: 1px solid #4c4d5f00;
+}
+
+.product-nav-inside-content-wrapper:hover
+{
+    transition-duration: 0.4s;
+    border-bottom: 1px solid #4c4d5f00;
+}
+
+
+.product-nav-inside-dropdown-heading
+{
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+
+.product-nav-inside-dropdown-subheading
+{
+    color: #4c4d5f;
+    font-size: 16px;
+    line-height: 26px;
 }
